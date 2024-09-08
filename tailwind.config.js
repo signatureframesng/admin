@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  mode: 'jit',
+  content: [
+    `components/**/*.{vue,js}`,
+    `layouts/**/*.vue`,
+    `pages/**/*.vue`,
+    `app.vue`,
+    `plugins/**/*.{js,ts}`,
+    `nuxt.config.{js,ts}`,
+  ],
+  theme: {
+    extend: {
+      screens: {
+        xs: { max: '380px' },
+      },
+      fontSize: {
+        '2xs': '0.65rem',
+        '3xs': '0.5rem',
+      },
+      backgroundImage: {
+        'gradient-light': "linear-gradient(180deg, #ffffff 0%, #E1E5F2 75%, #E1E5F2 100%)",
+        'gradient-light-var': "linear-gradient(180deg, #E1E5F2 0%, #ffffff50 100%)"
+      },
+      colors: {
+        primary: "#1F7A8C",
+        secondary: "#022B3A",
+        light: "#FFFFFF",
+        'light-var': "#E1E5F2AB",
+        'light-blue': "#BFDBF7",
+        'light-gray': "#E1E5F2",
+        variant: "#BC6C25",
+        'variant-light': "#FEFAE0",
+        info: "#2E697E",
+        fav: "#f52525",
+        error: "#e76059",
+        error_light: "#fc8680",
+        warning: "#c29b02",
+        // warning: "#e3ca84",
+        success: "#4ca658",
+      },
+      fontFamily: {
+        'inter': ['"Inter"', 'sans-serif'],
+        'display': ['"Antic Slab"', 'sans-serif'],
+        'quicksand': ['"Quicksand"', 'sans-serif'],
+        'muli': ['"Mulish"', 'sans-serif'],
+        'header': ['"Anek Devanagari"', 'sans-serif'],
+        'body': ['Anek Devanagari', 'Antic Slab', 'Open Sans'],
+        // 'body': ['Antic Slab', 'Open Sans'],
+      },
+      animation: { // all keyframes are defined in: ~/assets/styles/animations.css
+        dropdown: 'dropdown .4s linear 1',
+        fall: 'fall .4s ease-in-out 1',
+        show: 'show 0.5s ease-in-out 1',
+        showSlow: 'show 1s ease-in-out 1',
+        moveUp: 'moveUp .5s ease-in-out 1',
+        slide: 'slide 2s ease-in-out 1',
+        close: 'close 0.3s ease-in-out 1',
+        marquee: 'marquee 100s linear infinite',
+        marqueeReverse: 'marqueeReverse 100s linear infinite',
+        fadeDown: 'fadeDown 1s ease-in-out 1',
+        fadeUp: 'fadeUp 1s ease-in-out 1',
+        fadeDownFast: 'fadeDown 0.4s ease-in-out 1',
+        fadeUpFast: 'fadeUp 0.4s ease-in-out 1',
+        fadeRight: 'fadeRight 1s ease-in-out 1',
+        fadeLeft: 'fadeLeft 1s ease-in-out 1',
+        fadeRightNav: 'fadeRight 0.5s ease-in-out 1',
+        fadeLeftNav: 'fadeLeft 0.5s ease-in-out 1',
+        'zoom-in': 'zoomIn 0.5s ease-in-out 1',
+      },
+    },
+  },
+  plugins: [],
+}
+
