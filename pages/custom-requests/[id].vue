@@ -15,7 +15,6 @@ const { data: request = {} } = res;
 
 <template>
   <main class="p-4">
-    {{ config.public.API_URL }}
     <section v-if="error">
       <h1 class="text-3xl font-bold">Error</h1>
       <p>Ops. An eerror occoured while fetching request details</p>
