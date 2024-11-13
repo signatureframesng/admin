@@ -16,7 +16,7 @@ const { data: request = {} } = res;
 <template>
   <main class="p-4">
     <section v-if="error">
-      <h1 class="text-3xl font-bold">Error!</h1>
+      <h1 class="text-3xl font-bold">Error</h1>
       <p>Ops. An eerror occoured while fetching request details</p>
       {{ error }}
     </section>
