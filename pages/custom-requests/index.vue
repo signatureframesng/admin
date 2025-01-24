@@ -14,7 +14,7 @@ const { data: requests = [] } = res;
   <main class="p-4">
     <section v-if="error">
       <h1 class="text-3xl font-bold">Error</h1>
-      <p>Oops. An eerror occoured while fetching request details</p>
+      <p>Oops. An error occoured while fetching request details</p>
       <p>{{ error }}</p>
     </section>
     <section v-else>
